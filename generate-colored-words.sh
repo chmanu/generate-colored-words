@@ -22,9 +22,9 @@ for i in `echo $txt | fold -w1 `; do
                 c=1
         fi
         if [ $c -lt 10 ] ; then
-        convert -quiet motifs/0${c}.png +repage ./tmp_gcw1_$num.png
-else
-        convert -quiet motifs/${c}.png +repage ./tmp_gcw1_$num.png
+                convert -quiet motifs/0${c}.png +repage ./tmp_gcw1_$num.png
+        else
+                convert -quiet motifs/${c}.png +repage ./tmp_gcw1_$num.png
         fi
 
         convert ./tmp_gcw1_$num.png +repage -resize '266x235^' ./tmp_gcw1_$num.png
@@ -34,8 +34,6 @@ else
 done
 
 sleep 1
-
-mkdir -p result
 
 cpt=0
 nmot=0
