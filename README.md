@@ -18,3 +18,11 @@ donne :
 
 ![IMAGES](doc/word-6-IMAGES.png)
 
+
+Dans les détails :
+---
+
+Chaque lettres est créée en lui apposant le motif, dans l'ordre des motifs (puis revient au premier motif).
+
+Puis les mots sont créées ; la couleur du fond est, quant à elle, générée aléatoirement à partir d'une liste (qui peut être personnalisée dans le haut du script) ; ainsi, si la même couleur se suit, il est possible de relancer le script, vous aurez alors une autre combinaison concernant les couleurs de fond.
+
