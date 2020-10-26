@@ -26,5 +26,6 @@ Dans les détails :
 
 Chaque lettres est créée en lui apposant le motif, dans l'ordre des motifs (puis revient au premier motif).
 
-Puis les mots sont créées ; la couleur du fond est, quant à elle, générée aléatoirement à partir d'une liste (qui peut être personnalisée dans le haut du script) ; ainsi, si la même couleur se suit, il est possible de relancer le script, vous aurez alors une autre combinaison concernant les couleurs de fond.
+Puis les mots sont créées ; la couleur du fond est, quant à elle, générée aléatoirement à partir d'une liste (qui peut être personnalisée dans le haut du script).
 
+L'option -bg (à placer avant le texte à générer) permet d'éviter la recréation des lettres mais de ne regénérer que les mots (et leur fond) ; ceci permet notamment de modifier le fond lorsque le tirage aléatoire ne convient pas (plusieurs mots consécutifs avec la même couleur).
