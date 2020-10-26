@@ -2,7 +2,9 @@
 
 Ce script permet de générer des images colorées à partir d'un texte :
 
-./generate-colored-words.sh "HELLO WORLD AND CREATE NICE IMAGES"
+```
+  ./generate-colored-words.sh "HELLO WORLD AND CREATE NICE IMAGES"
+```
 
 donne :
 
