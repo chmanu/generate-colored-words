@@ -10,9 +10,10 @@
 bgcolors=("#55ff55" "#55F" "#F55" "#FF0" "#00cc66" "#00bbdd" "orange" "purple")
 
 if [ "x$1" == "x-bg" ] ; then
-        txt=$2
+        shift
+        txt=$@
 else
-        txt=$1
+        txt=$@
 
         c=0
         n=0
@@ -40,7 +41,6 @@ fi
 
 sleep 1
 
-mkdir -p result
 
 cpt=0
 nmot=0
