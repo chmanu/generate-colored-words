@@ -44,6 +44,9 @@ sleep 1
 
 cpt=0
 nmot=0
+bgcolorslength=${#bgcolors[@]}
+bgcolorslength=$((bgcolorslength-1))
+
 for i in `echo $txt ` ; do 
         nmot=$((nmot+1))
         files=""
@@ -53,7 +56,7 @@ for i in `echo $txt ` ; do
         done
         # in order to switch the random number, let's do a pause
         sleep .05
-        rnd=`shuf -i 0-7 -n1 `
+        rnd=`shuf -i 0-${bgcolorslength} -n1 `
         bgcolor=${bgcolors[$rnd]}
         convert -border 15x15 -bordercolor $bgcolor -resize x140 -background $bgcolor -extent 150x150 -gravity center  +append -frame 3x3 -mattecolor black $files word-$nmot-$i.png
 done
